@@ -7,5 +7,6 @@ const api = Router()
 const userController = require('../controllers/user.controller')
 
 api.post('/user', userController.saveUser)
+api.post('/signin', userController.SignIn)
 
 module.exports = api
